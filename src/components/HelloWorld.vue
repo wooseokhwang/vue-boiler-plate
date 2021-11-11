@@ -87,8 +87,8 @@
     <ul>
       <li>
         <a href="https://router.vuejs.org" target="_blank" rel="noopener"
-          >vue-router</a
-        >
+          >vue-router
+        </a>
       </li>
       <li>
         <a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a>
@@ -103,26 +103,26 @@
       </li>
       <li>
         <a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener"
-          >vue-loader</a
-        >
+          >vue-loader
+        </a>
       </li>
       <li>
         <a
           href="https://github.com/vuejs/awesome-vue"
           target="_blank"
           rel="noopener"
-          >awesome-vue</a
-        >
+          >awesome-vue
+        </a>
       </li>
     </ul>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
-
+import { defineComponent } from 'vue';
+const a = 'hi';
 export default defineComponent({
-  name: "HelloWorld",
+  name: 'HelloWorld',
   props: {
     msg: String,
   },
