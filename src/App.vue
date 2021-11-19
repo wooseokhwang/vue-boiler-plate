@@ -1,10 +1,23 @@
 <template>
+  <button @click="handleClickTranslate">번역</button>
   <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </div>
   <router-view />
 </template>
+
+<script>
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  methods: {
+    handleClickTranslate() {
+      console.log(this._$translate('greetings.hi'));
+    },
+  },
+});
+</script>
 
 <style>
 #app {

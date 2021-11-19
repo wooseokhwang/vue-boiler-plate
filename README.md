@@ -27,3 +27,10 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+
+### 컴포넌트 관련 네이밍
+
+- 합성어
+- PascalCase 나 kebab-case
