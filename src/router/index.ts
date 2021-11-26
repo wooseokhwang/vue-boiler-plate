@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 import { lazyLoadPage } from '@/helpers/router';
 import Home from '@/views/Home.vue';
+import PageNotFoundPage from '@/views/PageNotFoundPage.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -12,6 +13,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/about',
     name: 'About',
     component: () => lazyLoadPage('About'),
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    component: PageNotFoundPage,
   },
 ];
 
