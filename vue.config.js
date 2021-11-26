@@ -1,3 +1,6 @@
 module.exports = {
-  devServer: { overlay: true },
+  configureWebpack: {
+    plugins: [],
+  },
+  devServer: { overlay: false },
 };
